@@ -14,8 +14,10 @@ if [ ! -d "$root_dir" ];then
 	do
 		mkdir -p "$root_dir/exercise_$category"/{bin,include,result,src} && touch "$root_dir/exercise_$category/CMakeLists.txt"
 		echo "-------------------------------"
+		sleep 0.2
 		echo "exercise_$category has been created ✅"
 	done
+	sleep 0.2
 	echo "-------------------------------"
 	echo "All tasks have been finished 🚀"
 else
@@ -27,7 +29,7 @@ sleep 0.5
 tree
 
 sleep 0.5
-echo -e "\033[38;2;255;69;0m
+echo -e "\033[48;5;235;38;2;255;69;0m
       _   _   _   ____    _____     ____     ___      ___   _____ 
      | | | | | | / ___|  |_   _|   |  _ \   / _ \    |_ _| |_   _|
   _  | | | | | | \___ \    | |     | | | | | | | |    | |    | |  
