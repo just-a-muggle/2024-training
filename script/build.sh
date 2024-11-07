@@ -22,6 +22,7 @@ echo -e "\033[48;5;235;38;2;255;69;0m        \::::/    /              \::::/    
 echo -e "\033[48;5;235;38;2;255;69;0m         \::/____/                \::/____/                \::/    /                \::/    /        \::/____/         \033[0m"; sleep 0.02
 echo -e "\033[48;5;235;38;2;255;69;0m          ~~                       ~~                       \/____/                  \/____/          ~~               \033[0m"; sleep 0.2
 
+
 root_dir="Experiment2_1"
 
 categories=("A" "B" "C" "D")
@@ -29,7 +30,7 @@ categories=("A" "B" "C" "D")
 if [ ! -d "$root_dir" ];then
 	
 	echo "Start building ⚙️  "
-	mkdir -p "$root_dir"
+	cd .. && mkdir -p "$root_dir"
 	touch $root_dir/{README.txt,CMakeLists.txt}
 
 	for category in "${categories[@]}";
